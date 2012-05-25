@@ -1,0 +1,21 @@
+def prime(x):
+  y=0
+  if(x==2 or x==3):
+    return True
+  for j in range(2,int(x**0.5+1)):
+    if(x%j==0):
+      return False
+    else:
+      y=1
+  if(y==1):
+    return True
+
+print 'Sum is 142913828922...but 3 cores are idle so why not calculate it again :P. \nCalculating...'
+i=2
+infernalsum=0
+while(i<2*10**6):
+  #print i
+  if(prime(i)):
+    infernalsum=infernalsum+i
+  i=i+1  
+print infernalsum
