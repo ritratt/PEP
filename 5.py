@@ -12,7 +12,7 @@ def prime(x):
     return True
 def primefacts(y):    
   fact=[]
-  
+  y=64
   for i in range(2,y/2):  
     x=y
     while(x!=1):
@@ -23,8 +23,4 @@ def primefacts(y):
 	x=1
   return fact
   
-fact20=primefacts(20)
-print fact20
-print fact20.count(fact20[0])
-x=filter(lambda a:a!=str(fact20[0]),fact20)
-print x
+  

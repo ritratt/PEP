@@ -1,0 +1,19 @@
+def prime(x):
+  y=0
+  if(x==2 or x==3):
+    return True
+  for j in range(2,int(x**0.5+1):
+    if(x%j==0):
+      return False
+    else:
+      y=1
+  if(y==1):
+    return True
+    
+x=0    
+i=2
+while x<10001:
+  if(prime(i)):
+    x=x+1
+  i=i+1
+print i-1
